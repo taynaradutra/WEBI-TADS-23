@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap");
+
+* {
+  font-family: "Roboto", sans-serif;
+}
+#titulo {
+  color: rgba(28, 119, 0, 0.83);
+  font-family: "Courier New", Courier, monospace;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+
+span {
+  text-align: center;
+  color: red;
+}
+
+.teste {
+  background-image: url("../img/cachorro.png");
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 800px;
+  background-size: cover;
+  border: 2px solid red;
+}
+
+.teste h2 {
+  text-align: center;
+}
