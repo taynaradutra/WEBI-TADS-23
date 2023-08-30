@@ -9,3 +9,8 @@ nav ul li a {
   text-decoration: none;
   color: red;
 }
+
+section {
+  height: 800px;
+  border: 1px solid red;
+}
