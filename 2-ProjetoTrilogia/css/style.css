@@ -1,16 +1,71 @@
+/* import */
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: beige;
+}
+nav {
+  background-color: yellow;
+  height: 50px;
+}
 nav ul {
   list-style-type: none;
 }
 
 nav ul li {
   display: inline-block;
+  margin: 20px;
 }
 nav ul li a {
   text-decoration: none;
   color: red;
 }
 
+.banner {
+  background-image: url("../img/pxfuel.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  height: 500px;
+  padding: 30px;
+}
+
+.banner h1,
+.banner p {
+  background-color: rgba(119, 119, 116, 0.727);
+  color: yellow;
+  text-align: center;
+  padding: 0 150px;
+  margin-bottom: 15px;
+}
+
 section {
-  height: 800px;
-  border: 1px solid red;
+  background-color: grey;
+
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.secao-titulo,
+.secao-img,
+.secao-subtitulo,
+.secao-descricao {
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.secao-img {
+  display: block;
+  margin: auto;
+  border: 5px solid yellow;
+}
+
+.secao-titulo {
+  text-align: center;
+  color: red;
 }

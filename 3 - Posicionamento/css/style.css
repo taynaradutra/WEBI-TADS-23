@@ -1,0 +1,36 @@
+body {
+  height: 1200px;
+  background-color: red;
+}
+
+.box {
+  width: 200px;
+  height: 200px;
+  border: 2px solid red;
+  background-color: grey;
+}
+
+.box1 {
+  background-color: yellow;
+}
+.box2 {
+  background-color: orange;
+}
+
+.box3 {
+  position: absolute;
+}
+
+.box2 {
+  position: fixed;
+  right: 0px;
+  bottom: 0px;
+}
+.subbox {
+  width: 100px;
+  height: 100px;
+  background-color: pink;
+  position: relative;
+  top: 10px;
+  left: 10px;
+}
