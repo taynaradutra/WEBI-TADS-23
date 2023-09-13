@@ -1,0 +1,19 @@
+.container {
+  border: 2px solid red;
+  background-color: grey;
+  width: 900px;
+  height: 900px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 20px;
+}
+
+.item {
+  border: 1px solid blue;
+  background-color: yellow;
+  width: 200px;
+  height: 100px;
+}
