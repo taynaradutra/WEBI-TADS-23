@@ -73,3 +73,55 @@ main {
 .main-button:hover {
   background-color: var(--cor-secundaria);
 }
+
+section {
+  padding: var(--espacamento);
+}
+
+#section-dance {
+  background-color: var(--cor-primaria);
+  padding: 15px 15px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.container-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 300px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cor-secundaria);
+  color: white;
+}
+
+.card figure img {
+  width: 100%;
+}
+
+.card p {
+  text-align: justify;
+  padding: 10px;
+}
