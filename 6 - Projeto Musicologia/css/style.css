@@ -36,6 +36,7 @@ main {
   background-image: url("../img/banner.png");
   height: 492px;
   background-position: center;
+  background-size: cover;
   padding: var(--espacamento);
   width: 100%;
 }
@@ -124,4 +125,25 @@ section {
 .card p {
   text-align: justify;
   padding: 10px;
+}
+
+.card-price {
+  background-color: var(--cor-primaria);
+}
+
+#section-amazing .row {
+  width: 100%;
+  display: flex;
+}
+
+#section-amazing .row .col-1 {
+  width: 50%;
+}
+
+#section-amazing .row .col-2 {
+  width: 50%;
+}
+
+.col-1 figure img {
+  width: 100%;
 }
