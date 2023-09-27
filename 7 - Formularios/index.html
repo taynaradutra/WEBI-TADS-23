@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Projeto Formulários</title>
+  </head>
+  <body>
+    <header>
+      <h1>CADASTRO DEVS</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis
+        perspiciatis fuga voluptas atque quasi? Vero saepe sint reiciendis
+        facilis corrupti id impedit perferendis autem voluptates. Laudantium
+        error ullam cum repellat.
+      </p>
+    </header>
+    <main>
+      <form action="" method="post">
+        <h2>Formulário para Desenvolvedores</h2>
+
+        <div class="container-form">
+          <fieldset>
+            <legend>Dados Pessoais</legend>
+
+            <!-- Nome, email, telefone, 
+            endereço, data de nascimento -->
+            <div>
+              <label for="nome">Nome: *</label>
+              <input
+                type="text"
+                name="nome"
+                id="nome"
+                placeholder="Informe seu nome"
+                required
+                disabled
+              />
+            </div>
+
+            <div>
+              <label for="email">Email: *</label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Informe seu email"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="whats">Whats: *</label>
+              <input
+                type="tel"
+                name="whats"
+                id="whats"
+                placeholder="Informe seu whats"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="endereco">Endereço: *</label>
+              <input
+                type="text"
+                name="endereco"
+                id="endereco"
+                placeholder="Informe seu endereço"
+                required
+              />
+            </div>
+
+            <div>
+              <label for="dtNascimento">Data de Nascimento: *</label>
+              <input
+                type="date"
+                name="dtNascimento"
+                id="dtNascimento"
+                required
+              />
+            </div>
+          </fieldset>
+
+          <fieldset>
+            <legend>Dados Profissionais</legend>
+            <!-- nível de experiência (estágio, jr, pleno ou senior)
+                 modo de trabalho (hibrido, presencial ou home office)
+                 habilidades (conhecimentos)
+                deixe uma mensagem sobre você. 
+            -->
+
+            <div>
+              <label for="experiencia"> Informe seu nível de experiência</label>
+              <select name="experiencia" id="experiencia">
+                <option value="" selected>Selecione uma opção</option>
+                <option value="estagio">Estágio</option>
+                <option value="junior">Jr.</option>
+                <option value="pleno">Pleno</option>
+                <option value="senior">Senior</option>
+              </select>
+            </div>
+
+            <div>
+              <p>Informe sua preferência de trabalho:</p>
+              <div class="container-radio">
+                <div>
+                  <input
+                    type="radio"
+                    name="modoTrab"
+                    id="presencial"
+                    value="presencial"
+                  />
+                  <label for="presencial">Presencial</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="modoTrab"
+                    id="hibrido"
+                    value="hibrido"
+                  />
+                  <label for="hibrido">Híbrido</label>
+                </div>
+                <div>
+                  <input
+                    type="radio"
+                    name="modoTrab"
+                    id="remoto"
+                    value="remoto"
+                  />
+                  <label for="remoto">Remoto</label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <p>Informe as linguagens de programação que você trabalha:</p>
+              <div class="container-checkbox">
+                <div>
+                  <input
+                    type="checkbox"
+                    name="linguagens"
+                    id="html"
+                    value="html"
+                  />
+                  <label for="html">HTML</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    name="linguagens"
+                    id="css"
+                    value="css"
+                  />
+                  <label for="css">CSS</label>
+                </div>
+
+                <div>
+                  <input type="checkbox" name="linguagens" id="js" value="js" />
+                  <label for="js">Javascript</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    name="linguagens"
+                    id="php"
+                    value="php"
+                  />
+                  <label for="php">PHP</label>
+                </div>
+
+                <div>
+                  <input
+                    type="checkbox"
+                    name="linguagens"
+                    id="java"
+                    value="java"
+                  />
+                  <label for="java">Java</label>
+                </div>
+              </div>
+            </div>
+
+            <div>
+              <label for="mensagem"> Nos conte um pouco sobre você...</label>
+              <textarea name="mensagem" id="mensagem"></textarea>
+            </div>
+          </fieldset>
+
+          <div class="container-botoes">
+            <input type="reset" value="Limpar" />
+            <input type="submit" value="Enviar" />
+          </div>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

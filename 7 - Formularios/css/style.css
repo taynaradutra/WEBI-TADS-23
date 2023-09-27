@@ -1,0 +1,98 @@
+/* não esquecer !*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+form {
+  background-color: #3eecac;
+  background-image: linear-gradient(357deg, #3eecac 0%, #ee74e1 100%);
+  box-shadow: -3px 9px 18px -3px rgba(0, 0, 0, 0.73);
+  width: 60%;
+  margin: auto;
+  padding: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.container-form fieldset {
+  padding: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.container-form fieldset > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="date"],
+select,
+textarea {
+  padding: 5px;
+  border: none;
+  color: #3eecac;
+}
+
+input[type="text"]::placeholder {
+  color: #ee74e1;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border: 2px solid #3eecac;
+}
+/*
+input[type="text"]:required {
+  background-color: red;
+}*/
+
+input[type="text"]:invalid,
+input[type="email"]:invalid {
+  background-color: yellow;
+}
+
+input[type="text"]:disabled {
+  background-color: grey;
+}
+
+textarea {
+  min-height: 150px;
+  resize: none;
+  outline: none;
+}
+
+.container-botoes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.container-botoes input {
+  width: 100px;
+  height: 35px;
+  background-color: #ee74e1;
+  border: none;
+  cursor: pointer;
+}
+
+.container-botoes input:hover {
+  background-color: #b350a9;
+}
