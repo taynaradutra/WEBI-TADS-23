@@ -1,0 +1,33 @@
+@media screen and (max-width: 480px) {
+  .container-header {
+    background-color: yellow;
+    justify-content: center;
+    height: 120px;
+    padding: 20px 50px;
+  }
+
+  .main-col1,
+  .main-col2 {
+    width: 100%;
+  }
+
+  .main-col1 figure {
+    justify-content: center;
+  }
+
+  .main-col2 {
+    align-items: center;
+  }
+
+  .sec {
+    text-align: center;
+  }
+
+  .card {
+    width: 90%;
+  }
+
+  .sec-2-title p {
+    width: 90%;
+  }
+}

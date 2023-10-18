@@ -1,0 +1,280 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  --cor-primaria: #5eb3c3;
+  --cor-secundaria: #444644;
+  --cor-terciaria: #f4f9f9;
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+}
+
+.container-header {
+  background-color: var(--cor-primaria);
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  height: 70px;
+
+  padding: 0px 50px;
+}
+
+.header-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 25px;
+}
+
+.header-menu ul li a {
+  text-decoration: none;
+  color: white;
+}
+
+.header-menu ul li a:hover {
+  color: var(--cor-secundaria);
+}
+
+.main {
+  background-color: var(--cor-primaria);
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+
+  width: 100%;
+  padding: 30px 50px;
+}
+
+.main-col1 {
+  width: 40%;
+}
+.main-col1 figure {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.main-col2 {
+  width: 40%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  color: white;
+}
+
+.main-col2 .main-title h1 {
+  font-size: 42px;
+}
+.main-col2 .main-title h1:first-child {
+  font-weight: normal; /* para tirar o negrito do primeiro h1*/
+}
+
+section {
+  padding: 30px 50px;
+}
+
+.section-title {
+  /*classe genérica para os títulos das seções*/
+  font-size: 32px;
+}
+
+.section-description {
+  /* classe genérica para os p das seções*/
+  font-size: 14px;
+}
+.sec {
+  background-color: var(--cor-secundaria);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap; /*verificar que possivelmente onde houver um flex, será necessário o flex-wrap para nos ajudar na responsividade*/
+  gap: 10px;
+
+  color: white;
+}
+
+.sec-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  width: 30%;
+  height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 15px;
+
+  padding: 10px;
+}
+
+.card figure {
+  flex-grow: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card p {
+  text-align: justify;
+}
+
+.sec-2 {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 40px;
+
+  background-color: var(--cor-terciaria);
+}
+
+.sec-2-title {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--cor-terciaria);
+}
+
+.sec-2-title p {
+  width: 50%;
+  text-align: center;
+}
+
+.sec-2-img {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sec-3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.card-img-people {
+  position: relative;
+  width: 50%;
+}
+
+.card-img-people figure img {
+  width: 110%;
+}
+
+.card-img-icon {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+}
+
+.sec-4 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  width: 100%;
+  background-color: var(--cor-terciaria);
+  padding: 100px 50px;
+}
+
+.sec-4-col1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.sec-4-col2 {
+  width: 50%;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.sec-4-col2 .row-1,
+.row-2 {
+  display: flex;
+  gap: 20px;
+}
+
+.footer .footer-row1 {
+  background-color: var(--cor-secundaria);
+  padding: 30px 50px;
+  color: white;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer .footer-row1 .footer-col1,
+.footer-col2,
+.footer-col3 {
+  width: 30%; /* 100 / 3 = 33.3*/
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-title {
+  font-size: 22px;
+}
+
+.footer-col2 > div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-col2 .contact-address,
+.contact-phone,
+.contact-email {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+
+.footer .footer-row2 {
+  padding: 20px 50px;
+  background-color: var(--cor-primaria);
+  color: white;
+  text-align: center;
+  font-weight: bold;
+}

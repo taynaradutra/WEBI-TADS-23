@@ -1,0 +1,61 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-size: 18px;
+}
+
+h1 {
+  margin: 20px;
+}
+
+/*medida relativa que vai usar o elemento pai como referência*/
+.container-em {
+  border: 3px solid coral;
+  margin: 20px;
+  padding: 30px;
+
+  width: 500px;
+  font-size: 50px;
+}
+
+.item-em {
+  margin-top: 20px;
+  border: 3px solid crimson;
+  width: 50%;
+}
+
+.um-em {
+  background-color: yellow;
+  font-size: 0.5em;
+}
+
+.dois-em {
+  font-size: 2em;
+}
+
+.tres-em {
+}
+
+/*medida relativa que vai usar o elemento raiz (html) como referência*/
+.container-rem {
+  border: 3px solid blue;
+  margin: 20px;
+  padding: 30px;
+
+  width: 600px;
+  font-size: 2rem;
+}
+
+.item-rem {
+  margin-top: 20px;
+  border: 3px solid green;
+}
+
+.um-rem {
+  font-size: 1rem;
+}
+
+.dois-rem {
+  font-size: 50%;
+}

@@ -1,0 +1,38 @@
+/*
+max-width - tudo que estiver abaixo. 
+min-width - tudo que for maior.
+*/
+@media (max-width: 768px) {
+  /*tablet*/
+}
+
+@media screen and (max-width: 461px) {
+  * {
+    font-size: 12px;
+  }
+  header {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .container-img {
+    flex-direction: column;
+  }
+
+  .item-img {
+    width: 80%;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .contato {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+}
