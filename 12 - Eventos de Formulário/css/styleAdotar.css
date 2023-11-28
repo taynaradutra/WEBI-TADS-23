@@ -1,0 +1,15 @@
+.erro {
+  border: 1px solid red;
+}
+
+.msgm-erro {
+  visibility: hidden;
+}
+.msgm-erro--active {
+  visibility: visible;
+  color: red;
+}
+
+input:blur {
+  border: 1px solid yellow;
+}
