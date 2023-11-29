@@ -72,5 +72,7 @@ listaCards.forEach((element) => {
   element.lastElementChild.addEventListener("click", (event) => {
     event.preventDefault();
     let animalSelecionado = element.lastElementChild.getAttribute("idAnimal");
+    sessionStorage.setItem("animalSelecionado", animalSelecionado);
+    window.location.href = "./adotar.html";
   });
 });
