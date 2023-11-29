@@ -35,3 +35,42 @@ let listaAnimais = [
     img: "./img/img5.webp",
   },
 ];
+
+const criarCards = () => {
+  let container = document.querySelector(".container");
+
+  listaAnimais.forEach((element) => {
+    let card = `
+      <div class="card">
+        <img class="card-img" src="${element.img}" />
+        <h2 class="card-titulo">${element.nome}</h2>
+        <p class="card-descricao">${element.descricao}</p>
+        <a class="card-botao" idAnimal="${element.idAnimal}"> ADOTAR </a>
+      </div>
+    `;
+
+    container.innerHTML += card;
+  });
+};
+
+criarCards();
+
+//mouseover
+//mouseout
+
+let listaCards = document.querySelectorAll(".card");
+
+listaCards.forEach((element) => {
+  element.addEventListener("mouseover", () => {
+    element.classList.add("change-scale");
+  });
+
+  element.addEventListener("mouseout", () => {
+    element.classList.remove("change-scale");
+  });
+
+  element.lastElementChild.addEventListener("click", (event) => {
+    event.preventDefault();
+    let animalSelecionado = element.lastElementChild.getAttribute("idAnimal");
+  });
+});
